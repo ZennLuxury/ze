@@ -2,13 +2,13 @@
   "name": "IkyAds",
   "version": "1.0.0",
   "description": "Gak Ada",
-  "main": "main.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js"
+    "start": "node index.js"
   },
   "author": "ikyads",
   "dependencies": {

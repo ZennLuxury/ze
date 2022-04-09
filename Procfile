@@ -1,1 +1,1 @@
-working: node main.js
+working: node index.js
