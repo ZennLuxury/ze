@@ -39,7 +39,8 @@
     "twitter-url-direct": "^1.0.1",
     "util": "^0.12.4",
     "yt-search": "^2.8.0",
-    "awesome-phonenumber": "^2.70.0"
+    "awesome-phonenumber": "^2.70.0",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0"
   },
   "repository": {
     "type": "git",

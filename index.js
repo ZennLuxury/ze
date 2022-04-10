@@ -104,12 +104,12 @@ Hikari.version = [ 2, 2140, 12 ]
 	// Menghubungkan
 	fs.existsSync(`./${setting.sessionName}.json`) && Hikari.loadAuthInfo(`./${setting.sessionName}.json`)
 	Hikari.on('connecting', () => {
-		console.log(color('[ Manik Gans ]', 'cyan'), color('Menghubungkan....'));
+		console.log(color('[ Zenn Gans ]', 'cyan'), color('Menghubungkan....'));
 	})
 
 	//connect
 	Hikari.on('open', () => {
-		console.log(color('[ Manik Gans ]', 'cyan'), color('Bot Sudah Online!'));
+		console.log(color('[ Zenn Gans ]', 'cyan'), color('Bot Sudah Online!'));
 	})
 
 	// session
@@ -117,8 +117,8 @@ Hikari.version = [ 2, 2140, 12 ]
 		timeoutMs: 30 * 1000
 	})
 	fs.writeFileSync(`./${setting.sessionName}.json`, JSON.stringify(Hikari.base64EncodedAuthInfo(), null, '\t'))
-    Hikari.updateProfileName('CloneManik')
-    Hikari.setStatus('Babunya Manik Official')
+    Hikari.updateProfileName('CloneZenn')
+    Hikari.setStatus('Babunya Zenn')
     Hikari.updateProfilePicture(Hikari.user.jid, mdia)
    menu =`*「⋆⋅ BOT TERSAMBUNG⋅⋆」*
              

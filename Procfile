@@ -1,1 +1,1 @@
-working: node index.js
+working: npm i ffmpeg && npm start

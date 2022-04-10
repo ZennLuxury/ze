@@ -74,7 +74,7 @@ const afk = require("./FuncBot/afk");
 const level = require("./FuncBot/level");
 const atm = require("./FuncBot/atm");
 const _sewa = require("./FuncBot/sewa");
-const { str2Regex, match } = require('./FuncBot/anomanik')
+const { str2Regex, match } = require('./FuncBot/anoZenn')
 /////////////////////////////////  cukup pake aja ya kak /////////////////////////////////////
 global.baileys = require('@adiwajshing/baileys');
 var kuis = false
@@ -698,7 +698,7 @@ role = 'Mythical Glory'
 role = 'Immortal'
 }
 
-////< DAFTAR BUTTON BY MANIK > ////
+////< DAFTAR BUTTON BY Zenn > ////
 
 const daftar1 = `Hai kak  ${pushname} ${ucapanWaktu} \n\╭◪ *「 DAFTAR DULU 」*
 ╰───────────────╮  
@@ -2176,11 +2176,11 @@ You can see other menus for yourself by typing !command `
      
      return database
      break
-        //anonymouschatbymanik
+        //anonymouschatbyzenn
              case 'anonymous':
        theu = await Hikari.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
-       buatanmanik = `Halo ${pushname}👋, berikut perintah anonymous chat bot
+       buatanzenn = `Halo ${pushname}👋, berikut perintah anonymous chat bot
 
 🗒️ ${prefix}anonymous - _melihat perintah yang ada_
 🔎 ${prefix}start - _mencari teman bicara_
@@ -2198,7 +2198,7 @@ Note: Owner Tidak Bertanggung Jawab Jika Ada Masalah Antara Pengguna Bot`
                imageMsg = (await Hikari.prepareMessageMedia(fs.readFileSync(`./media/Anon.png`), 'imageMessage', { thumbnail:Bfake, contextInfo:{forwardingScore: 989, isForwarded: true}})).imageMessage
 
                buttonsMessage = {
-               contentText: `${buatanmanik}`,
+               contentText: `${buatanzenn}`,
                footerText: `Anonymous Chat By @${setting.ownerName}`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
@@ -5003,11 +5003,11 @@ case 'sfire1':{
 ╭─❒ 「 PRICE LIST 1 」 ❒
 ├⊱SEWA 5K/MINGGU
 ├⊱ SEWA 10K/BLN
-├⊱ SEWA + PREMIUM 15K/BLN
+├⊱ SEWA + PREMIUM 10K/BLN
 ├⊱ PERMANEN 50K
 ├⊱ PERMANEN + PREM 55K
 ├─❒ 「 PRICE LIST 2 」 ❒
-├⊱ JADI BOT 40k/BLN
+├⊱ JADI BOT 20k/BLN
 ├⊱ JADI BOT + OWNER 50K
 ├⊱ SC BOT TANYA OWNER
 ├─❒ 「 MINAT? PM 」 ❒
@@ -5083,7 +5083,7 @@ Wa.me/${setting.owner}`
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
-               const yy = {title: 'payment ke' + nombor++,
+               const yy = {title: 'payment ke' + nomor++,
     rows: [
        {
         title: `${listmenuu[startnum++]}`,
@@ -7675,7 +7675,7 @@ case 'caripesan':  //by ANU TEAM
              reply(`Pilih enable atau disable`)
 }
              break
-     //case anonymous chat by manik 
+     //case anonymous chat by Zenn 
      case 'mulai': case 'start': {
 if (isGroup) return reply('Fitur Tidak Dapat Digunakan Untuk Group!')
 this.anonymous = this.anonymous ? this.anonymous : {}
@@ -7797,8 +7797,8 @@ if (budy.includes(`assalamualaikum`)) {
 if (budy.includes(`anjing`)) {
   reply(`Tobat bwang`)
   }
-  if (budy.includes(`Manik`)) {
-  reply(`Ada perlu apa dengan manik?`)
+  if (budy.includes(`Zenn`)) {
+  reply(`Ada perlu apa dengan Zenn?`)
   }
 
 

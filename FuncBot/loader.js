@@ -13,7 +13,7 @@ function uncache(module = '.') {
 }
 
 function nocache(module, cb = () => { }) {
-    console.log(color('Module', 'green'), color(`'${module} System by Manik'`, 'cyan'))
+    console.log(color('Module', 'green'), color(`'${module} System by Zenn'`, 'cyan'))
     fs.watchFile(require.resolve(module), async () => {
         await uncache(require.resolve(module))
         cb(module)
